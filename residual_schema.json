@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RAVEN Residual Record",
+  "type": "object",
+  "required": [
+    "machine_version",
+    "timestamp",
+    "system_id",
+    "residual_score"
+  ],
+  "properties": {
+    "machine_version": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "system_id": {
+      "type": "string"
+    },
+    "residual_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "residual_mean_abs": {
+      "type": "number"
+    },
+    "residual_variance": {
+      "type": "number"
+    },
+    "residual_persistence": {
+      "type": "number"
+    },
+    "residual_coupling": {
+      "type": "number"
+    }
+  }
+}
